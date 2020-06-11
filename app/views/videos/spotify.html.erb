@@ -1,0 +1,18 @@
+<h1>Spotify</h1>
+
+<%= form_with(url: '/spotify', method: 'get', local: true ) do |f| %>
+  <%= f.text_field :search %>
+  <%= f.submit %>
+<% end %>
+
+<h1>result for: <%= @search %></h1>
+
+<% if @tracks %>
+  <% @tracks.each do |track| %>  
+    <p>  
+      <iframe src="https://open.spotify.com/embed/track/<%= track.id %>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      ---------------------------------------------
+    </p>
+  <% end %>
+<% end %>
+
