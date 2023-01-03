@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-gem 'httparty', '~> 0.18.0'
+gem 'httparty', '~> 0.21.0'
 gem 'soundcloud-ruby-api-wrapper', '~> 0.4.8'
 gem 'soundcloud', '~> 0.3.4'
 gem 'rspotify'
